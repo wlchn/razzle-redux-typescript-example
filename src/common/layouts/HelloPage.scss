@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+@import '../styles/global.scss';
+
+.HelloPage {
+  background-color: $white;
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
