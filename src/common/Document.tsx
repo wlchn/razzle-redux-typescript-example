@@ -1,19 +1,14 @@
 import { DocumentProps } from '@wlchn/razzle-redux-typescript';
 import React from 'react';
-import { SheetsRegistry } from 'react-jss';
 import { _env } from './lib/env';
 import { Helmet } from 'react-helmet';
 import transit from 'transit-immutable-js';
 
 const helmet = Helmet.renderStatic();
 
-export interface DocumentExtraProps {
-  styleSheets: SheetsRegistry;
-}
-
-class Document extends React.Component<DocumentProps & DocumentExtraProps> {
+class Document extends React.Component<DocumentProps> {
   public render() {
-    const { assets, html, initialState, styleSheets } = this.props;
+    const { assets, html, initialState } = this.props;
     const htmlAttrs = helmet.htmlAttributes.toComponent();
     const bodyAttrs = helmet.bodyAttributes.toComponent();
 
@@ -35,9 +30,7 @@ class Document extends React.Component<DocumentProps & DocumentExtraProps> {
             rel="stylesheet"
           />
           {assets.client.css ? <link rel="stylesheet" href={assets.client.css} /> : ''}
-          <style type="text/css" id="server-side-styles">
-            {styleSheets.toString()}
-          </style>
+
           {helmet.link.toComponent()}
           <script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" />

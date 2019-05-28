@@ -6,7 +6,6 @@ import './HelloPage.scss';
 import { fetchUser } from '../actions/user';
 
 const mapStateToProps = (state, props) => {
-  console.log(state.user.get('user').toJS());
   return {
     user: state.user.get('user').toJS()
   };
