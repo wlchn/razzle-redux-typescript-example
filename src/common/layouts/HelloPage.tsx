@@ -14,7 +14,7 @@ const mapStateToProps = (state, props) => {
 class HelloPage extends React.Component<any, any> {
   public componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(fetchUser('wlchn'));
+    dispatch(fetchUser('facebook'));
   }
 
   public render() {
