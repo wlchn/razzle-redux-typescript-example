@@ -13,7 +13,8 @@ const serverConfig = createServer<RootState, any, any>({
   razzleAssets,
   rootReducer,
   routes,
-  afterCreateStore: null
+  afterCreateStore: null,
+  showErrorLogs: true
 });
 
 const server = express();
