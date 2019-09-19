@@ -1,5 +1,5 @@
 import express from 'express';
-import { createServer } from '@wlchn/razzle-redux-typescript';
+import { createServer } from 'razzle-redux-typescript';
 import rootReducer, { RootState, initialState } from './common/reducers';
 import routes from './common/routes';
 import Document from './common/Document';

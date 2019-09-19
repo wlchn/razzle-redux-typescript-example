@@ -1,6 +1,6 @@
 import './common/styles/global.scss';
 
-import { hydrateClient } from '@wlchn/razzle-redux-typescript';
+import { hydrateClient } from 'razzle-redux-typescript';
 import rootReducer, { RootState } from './common/reducers';
 import routes from './common/routes';
 import transit from 'transit-immutable-js';

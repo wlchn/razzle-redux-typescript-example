@@ -1,4 +1,4 @@
-import { DocumentProps } from '@wlchn/razzle-redux-typescript';
+import { DocumentProps } from 'razzle-redux-typescript';
 import React from 'react';
 import { _env } from './lib/env';
 import { Helmet } from 'react-helmet';

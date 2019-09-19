@@ -10,7 +10,7 @@
     "tslint": "tslint --project tsconfig.json"
   },
   "dependencies": {
-    "@wlchn/razzle-redux-typescript": "^0.0.16",
+    "razzle-redux-typescript": "^0.1.0",
     "axios": "^0.18.0",
     "bignumber.js": "^8.1.1",
     "express": "^4.16.2",
