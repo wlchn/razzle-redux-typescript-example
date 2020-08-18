@@ -6,7 +6,6 @@ Bootstrap Razzle full Server Side Rendering(SSR) React App with TypeScript, Redu
 
 2. clone this repo and then:
 ```
-cd razzle-redux-typescript-example
 npm i
 npm run start
 ```
