@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "razzle-redux-typescript": "^0.1.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bignumber.js": "^8.1.1",
     "express": "^4.16.2",
     "farce": "^0.2.8",
